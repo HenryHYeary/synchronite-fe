@@ -1,0 +1,81 @@
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.root-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feature-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: slategray;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+.feature-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feature-btn:hover {
+  height: 150%;
+  width: 110%;
+  animation: 1500ms ease-in-out;
+  animation-delay: 300ms;
+  color: aquamarine;
+}
+
+.sign-in-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 15rem;
+  font-size: 1.05rem;
+  color: aliceblue;
+}
+
+.sign-in-btn:hover {
+  color: aquamarine;
+  height: 4rem;
+  width: 20rem;
+  animation: 1500ms ease-in-out;
+  animation-delay: 300ms;
+}
+
+.sign-in-link {
+  text-decoration: none;
+}
