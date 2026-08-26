@@ -8,7 +8,7 @@ export default function Login() {
         <h1>Sign In via Dropbox</h1>
       </div>
       <button className="sign-in-btn">
-        <img src={DropboxLogo} height={20} width={20} alt="Dropbox Icon" /> Authenticate via Dropbox
+        <img src={DropboxLogo} height={20} width={20} alt="Dropbox Icon" className="vendor-icon" /> Authenticate via Dropbox
       </button>
     </div>
     </>

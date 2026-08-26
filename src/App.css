@@ -79,3 +79,28 @@
 .sign-in-link {
   text-decoration: none;
 }
+
+.vendor-icon {
+  padding-right: 7px;
+}
+
+.watched-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 7rem;
+}
+
+.watched-folder {
+  list-style: none;
+  font-weight: bold;
+  font-size:  1rem;
+  margin-right: 3rem;
+}
+
+.watched-path {
+  border-radius: 2px;
+  background-color: aquamarine;
+  color: black;
+  margin-right: ;
+}
