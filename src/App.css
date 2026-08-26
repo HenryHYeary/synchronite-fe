@@ -96,11 +96,42 @@
   font-weight: bold;
   font-size:  1rem;
   margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.paths-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .watched-path {
   border-radius: 2px;
   background-color: aquamarine;
   color: black;
-  margin-right: ;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.edit-btn {
+  font-weight: bold;
+  width: 10rem;
+}
+
+.watched-exts-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.watched-ext {
+  list-style: none;
+  font-weight: normal;
+}
+
+.ext-label {
+  padding-right: 1rem;
 }

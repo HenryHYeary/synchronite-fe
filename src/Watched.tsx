@@ -1,11 +1,13 @@
 const DUMMY_DATA = [
   {
     label: "saves",
-    path: "~/.config/retroarch/saves"
+    path: "~/.config/retroarch/saves",
+    watchedExts: [".srm", ".save", ".sav"]
   },
   {
     label: "states",
-    path: "~/.config/retroarch/states"
+    path: "~/.config/retroarch/states",
+    watchedExts: [".state"]
   },
 ];
 
@@ -18,10 +20,19 @@ export default function Watched() {
         </div>
         <h1 className="watched-title">Watched Folders</h1>
         <div className="watched-container">
-          <ul>
+          <ul className="paths-container">
             {DUMMY_DATA.map((folder) => {
               return (
-                <li className="watched-folder">{folder.label}: <span className="watched-path">{folder.path}</span></li>
+                <li className="watched-folder">
+                  {folder.label}: <span className="watched-path">{folder.path}</span>
+                    <ul className="watched-exts-list">
+                      <label className="ext-label">Watched Extensions:</label>
+                      {folder.watchedExts.map((ext, index) => {
+                        return index === folder.watchedExts.length - 1 ? <li className="watched-ext">{ext}</li> : <li className="watched-ext">{ext},</li>
+                      })}
+                    </ul>
+                  <button className="edit-btn">Edit</button>
+                </li>
               )
             })}
           </ul>
