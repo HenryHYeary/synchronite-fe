@@ -24,11 +24,11 @@ export default function Watched() {
             {DUMMY_DATA.map((folder) => {
               return (
                 <li className="watched-folder">
-                  {folder.label}: <span className="watched-path">{folder.path}</span>
+                  <h2>{folder.label}:</h2> <span className="watched-path">{folder.path}</span>
                     <ul className="watched-exts-list">
                       <label className="ext-label">Watched Extensions:</label>
-                      {folder.watchedExts.map((ext, index) => {
-                        return index === folder.watchedExts.length - 1 ? <li className="watched-ext">{ext}</li> : <li className="watched-ext">{ext},</li>
+                      {folder.watchedExts.map((ext) => {
+                        return <li className="watched-ext">{ext}</li>
                       })}
                     </ul>
                   <button className="edit-btn">Edit</button>
