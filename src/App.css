@@ -139,3 +139,24 @@
 .ext-label {
   padding-right: 1rem;
 }
+
+.watched-directory-editor {
+  color: aliceblue;
+}
+
+.watched-tag-editor {
+  color: aliceblue;
+}
+
+.extension-list-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ext-btn {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+}
